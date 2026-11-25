@@ -1,0 +1,93 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.span2 {
+  grid-column: 1 / -1;
+}
+
+.field {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid rgba(194, 24, 91, 0.2);
+  background-color: #fff;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: var(--color-royal);
+  font-family: var(--font-sans);
+}
+
+.input::placeholder {
+  color: rgba(194, 24, 91, 0.4);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-royal);
+}
+
+.selectPlaceholder {
+  color: rgba(194, 24, 91, 0.4);
+}
+
+.chevron {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(194, 24, 91, 0.5);
+}
+
+.error {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #c0392b;
+}
+
+.submitError {
+  grid-column: 1 / -1;
+  font-size: 14px;
+  color: #c0392b;
+}
+
+.submit {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+}
+
+.submit:disabled {
+  opacity: 0.6;
+}
+
+.successBox {
+  border: 1px solid var(--color-powder);
+  background-color: var(--color-ivory-light);
+  padding: 40px;
+  text-align: center;
+}
+
+.successHeading {
+  font-size: 24px;
+}
+
+.successText {
+  margin-top: 12px;
+  font-size: 14px;
+  color: rgba(194, 24, 91, 0.7);
+}
+
+.successAction {
+  margin-top: 20px;
+}

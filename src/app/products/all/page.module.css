@@ -1,0 +1,83 @@
+.hero {
+  background-color: var(--color-royal);
+  background-image: linear-gradient(135deg, rgba(194, 24, 91, 0.9) 0%, rgba(158, 18, 73, 0.88) 55%, rgba(215, 227, 74, 0.55) 100%),
+    url("/images/backgrounds/products-header-bg.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 176px 40px 56px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest-xl);
+  color: rgba(255, 255, 240, 0.7);
+}
+
+.backLink:hover {
+  color: var(--color-powder);
+}
+
+.script {
+  margin-top: 16px;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--color-powder);
+}
+
+.heading {
+  margin-top: 4px;
+  font-size: 36px;
+  color: var(--color-ivory);
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 48px;
+  }
+}
+
+.description {
+  margin-top: 12px;
+  max-width: 560px;
+  font-size: 14px;
+  color: rgba(255, 255, 240, 0.75);
+}
+
+.section {
+  background-color: #fff4e8;
+  padding: 64px 0;
+}
+
+.sectionInner {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

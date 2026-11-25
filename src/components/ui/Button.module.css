@@ -1,0 +1,109 @@
+.base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest-xl);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  border: 1px solid transparent;
+  background: none;
+}
+
+.rect {
+  border-radius: 2px;
+}
+
+.pill {
+  border-radius: 999px;
+}
+
+.sizeButton {
+  padding: 14px 28px;
+}
+
+.sizeCompact {
+  padding: 8px 16px;
+}
+
+.sizeLink {
+  padding: 0;
+}
+
+.solid {
+  background-color: var(--color-ivory);
+  color: var(--color-royal);
+}
+.solid:hover {
+  background-color: var(--color-ivory-dark);
+}
+
+.dark {
+  background-color: var(--color-royal);
+  color: var(--color-ivory);
+}
+.dark:hover {
+  background-color: var(--color-royal-soft);
+}
+
+.outline {
+  border-color: var(--color-royal);
+  color: var(--color-royal);
+}
+.outline:hover {
+  background-color: var(--color-royal);
+  color: var(--color-ivory);
+}
+
+.outlineLight {
+  border-color: rgba(255, 255, 240, 0.6);
+  color: var(--color-ivory);
+}
+.outlineLight:hover {
+  border-color: var(--color-ivory);
+  background-color: rgba(255, 255, 240, 0.1);
+}
+
+.ghost {
+  color: var(--color-royal);
+}
+.ghost:hover {
+  color: var(--color-royal-soft);
+}
+
+.ghostLight {
+  color: var(--color-ivory);
+}
+.ghostLight:hover {
+  color: var(--color-powder);
+}
+
+.lemon {
+  background-color: var(--color-powder);
+  color: var(--color-ink);
+}
+.lemon:hover {
+  background-color: var(--color-powder-dark);
+}
+
+.outlineDark {
+  border-color: var(--color-ink);
+  color: var(--color-ink);
+  background-color: rgba(251, 243, 225, 0.45);
+}
+.outlineDark:hover {
+  background-color: var(--color-ink);
+  color: var(--color-ivory);
+}
+
+.whatsappChip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background-color: rgba(194, 24, 91, 0.1);
+}

@@ -1,0 +1,25 @@
+export const galleryFilters = ["Tents & Structures", "Furniture & Seating", "Tables & Décor", "Ceremonial & Stage"]
+
+export const galleryItems = [
+  { image: "/images/catalogue/page_31.webp", caption: "German hanger tent walkway installation", filter: "Tents & Structures" },
+  { image: "/images/catalogue/page_32.webp", caption: "Pagoda tent seating arrangement", filter: "Tents & Structures" },
+  { image: "/images/catalogue/page_33.webp", caption: "Pop-up canopy structure", filter: "Tents & Structures", representative: true },
+  { image: "/images/catalogue/page_16.webp", caption: "Gold & silver carved wedding sofa", filter: "Furniture & Seating" },
+  { image: "/images/catalogue/page_15.webp", caption: "Gold carved chaise lounge", filter: "Furniture & Seating" },
+  { image: "/images/catalogue/page_01.webp", caption: "Carved gold puja chair", filter: "Furniture & Seating" },
+  { image: "/images/catalogue/page_02.webp", caption: "Carved white puja chair", filter: "Furniture & Seating" },
+  { image: "/images/catalogue/page_23.webp", caption: "Tiffany resin chairs with cushions", filter: "Furniture & Seating" },
+  { image: "/images/catalogue/page_14.webp", caption: "White tufted loveseat sofa", filter: "Furniture & Seating" },
+  { image: "/images/catalogue/page_13.webp", caption: "White tufted lounge armchair", filter: "Furniture & Seating" },
+  { image: "/images/catalogue/page_08.webp", caption: "Round table, sky blue & white linen", filter: "Tables & Décor" },
+  { image: "/images/catalogue/page_06.webp", caption: "Round table, sky blue & black linen", filter: "Tables & Décor" },
+  { image: "/images/catalogue/page_07.webp", caption: "Round table, peach & black linen", filter: "Tables & Décor" },
+  { image: "/images/catalogue/page_10.webp", caption: "Glass-top round table", filter: "Tables & Décor" },
+  { image: "/images/catalogue/page_35.webp", caption: "Cake & dessert display plinths", filter: "Tables & Décor" },
+  { image: "/images/catalogue/page_20.webp", caption: "Accent table with banquet & Chiavari chairs", filter: "Tables & Décor" },
+  { image: "/images/catalogue/page_03.webp", caption: "Chrome & wood podium", filter: "Ceremonial & Stage" },
+  { image: "/images/catalogue/page_19.webp", caption: "Glass & chrome podium", filter: "Ceremonial & Stage" },
+  { image: "/images/catalogue/page_04.webp", caption: "Traditional brass inauguration lamp", filter: "Ceremonial & Stage" },
+  { image: "/images/catalogue/page_26.webp", caption: "Brass pooja thali & chowki set", filter: "Ceremonial & Stage" },
+  { image: "/images/catalogue/page_17.webp", caption: "Queue management stanchion & rope", filter: "Ceremonial & Stage" },
+]

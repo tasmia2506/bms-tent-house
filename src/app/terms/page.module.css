@@ -1,0 +1,27 @@
+.section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 206px 40px 80px;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.body {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(194, 24, 91, 0.7);
+}
+
+.body strong {
+  color: var(--color-royal);
+}
+
+.body a:hover {
+  text-decoration: underline;
+}

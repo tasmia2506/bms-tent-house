@@ -1,0 +1,485 @@
+.page {
+  position: relative;
+  padding-top: var(--header-height);
+  background-color: var(--color-royal-soft);
+  background-image: linear-gradient(135deg, rgba(158, 18, 73, 0.88) 0%, rgba(194, 24, 91, 0.82) 45%, rgba(185, 201, 50, 0.55) 100%),
+    url("/images/backgrounds/contact-floral-dark.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 767px) {
+  .page {
+    background-attachment: scroll;
+  }
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+  display: grid;
+  gap: 48px;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) 460px;
+    align-items: start;
+    padding: 80px 40px 96px;
+    gap: 64px;
+  }
+}
+
+.heroInfo {
+  max-width: 540px;
+}
+
+.eyebrow {
+  font-size: 32px;
+  line-height: 1;
+  color: var(--color-powder);
+}
+
+.heroHeading {
+  margin-top: 8px;
+  font-size: 40px;
+  line-height: 1.08;
+  color: var(--color-ivory);
+}
+
+@media (min-width: 768px) {
+  .heroHeading {
+    font-size: 56px;
+  }
+}
+
+.heroHighlight {
+  color: var(--color-powder);
+}
+
+.heroLead {
+  margin-top: 18px;
+  max-width: 440px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(255, 255, 240, 0.75);
+}
+
+.badgeRow {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badgeMagenta {
+  background-color: var(--color-royal);
+  color: var(--color-ivory);
+}
+
+.badgeMagenta svg {
+  color: var(--color-powder);
+}
+
+.badgeLemon {
+  background-color: var(--color-powder);
+  color: var(--color-ink);
+}
+
+.badgeLemon svg {
+  color: var(--color-royal);
+}
+
+.personGrid {
+  margin-top: 32px;
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 500px) {
+  .personGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.personCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px 14px 14px;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(194, 24, 91, 0.12);
+  transition: transform 0.15s ease;
+}
+
+.personCard:hover {
+  transform: translateY(-2px);
+}
+
+.personMagenta {
+  background-color: var(--color-royal);
+}
+
+.personLemon {
+  background-color: var(--color-powder);
+}
+
+.personAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background-color: #fff;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-royal);
+}
+
+.personMagenta .personAvatar {
+  color: var(--color-royal);
+}
+
+.personLemon .personAvatar {
+  color: var(--color-ink);
+}
+
+.personName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.personMagenta .personName {
+  color: var(--color-ivory);
+}
+
+.personLemon .personName {
+  color: var(--color-ink);
+}
+
+.personRole {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.personMagenta .personRole {
+  color: rgba(255, 255, 240, 0.7);
+}
+
+.personLemon .personRole {
+  color: rgba(23, 20, 15, 0.6);
+}
+
+.heroFormCard {
+  padding: 36px 24px;
+  background-color: #fff;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 30px 70px rgba(194, 24, 91, 0.16);
+}
+
+@media (min-width: 640px) {
+  .heroFormCard {
+    padding: 44px 40px;
+  }
+}
+
+.formHeading {
+  font-size: 26px;
+  color: var(--color-royal);
+}
+
+.formDivider {
+  margin: 10px auto 0;
+  width: 64px;
+  height: 1px;
+  background-color: rgba(194, 24, 91, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formDivider span {
+  display: inline-flex;
+  padding: 0 8px;
+  background-color: #fff;
+  font-size: 11px;
+  color: var(--color-powder-dark);
+}
+
+.formLead {
+  margin-top: 14px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: rgba(23, 20, 15, 0.6);
+}
+
+.formWrap {
+  margin-top: 28px;
+  text-align: left;
+}
+
+/* ---------- Info cards ---------- */
+
+.infoCards {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 24px 72px;
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 900px) {
+  .infoCards {
+    padding: 0 40px 96px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 28px;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0 20px 48px rgba(194, 24, 91, 0.1);
+}
+
+.infoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+}
+
+.infoIconMagenta {
+  background-color: var(--color-royal);
+  color: var(--color-ivory);
+}
+
+.infoIconLemon {
+  background-color: var(--color-powder);
+  color: var(--color-royal);
+}
+
+.infoTitle {
+  margin-top: 18px;
+  font-size: 18px;
+  color: var(--color-ink);
+}
+
+.infoText {
+  margin-top: 16px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: rgba(23, 20, 15, 0.6);
+}
+
+.infoPhone {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-royal);
+}
+
+.infoPhoneTag {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background-color: var(--color-powder);
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-ink);
+}
+
+.branchMini {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: rgba(23, 20, 15, 0.55);
+}
+
+.infoCopyWrap {
+  margin-top: 18px;
+  width: 100%;
+}
+
+.infoButton {
+  margin-top: 24px;
+}
+
+/* ---------- Map section ---------- */
+
+.mapSection {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .mapSection {
+    padding: 0 40px 120px;
+  }
+}
+
+.mapEyebrow {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--color-powder);
+}
+
+@media (min-width: 768px) {
+  .mapEyebrow {
+    font-size: 42px;
+  }
+}
+
+.mapHeading {
+  margin-top: 10px;
+  font-size: 40px;
+  color: var(--color-ivory);
+}
+
+@media (min-width: 768px) {
+  .mapHeading {
+    font-size: 56px;
+  }
+}
+
+.mapFrameWrap {
+  position: relative;
+  margin-top: 40px;
+  border-radius: 28px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .mapFrameWrap {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+.mapFrame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mapOverlay {
+  position: absolute;
+  z-index: 1;
+  top: 24px;
+  left: 24px;
+  right: 24px;
+  max-width: 360px;
+  padding: 28px 24px;
+  background-color: var(--color-royal);
+  border-radius: 20px;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .mapOverlay {
+    right: auto;
+  }
+}
+
+.mapOverlayLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest-xl);
+  color: var(--color-powder);
+}
+
+.mapOverlayName {
+  margin-top: 8px;
+  font-size: 20px;
+  color: var(--color-ivory);
+}
+
+.mapOverlayAddress {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 240, 0.7);
+}
+
+.mapOverlay > :global(a) {
+  margin-top: 18px;
+}
+
+.otherBranches {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+}
+
+.otherBranchRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: var(--color-ivory-light);
+  font-size: 14px;
+  color: var(--color-ink);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.otherBranchRow:hover {
+  background-color: var(--color-royal);
+  color: var(--color-ivory);
+}
+
+.otherBranchArrow {
+  color: var(--color-royal);
+}
+
+.otherBranchRow:hover .otherBranchArrow {
+  color: var(--color-ivory);
+}

@@ -1,0 +1,270 @@
+.hero {
+  position: relative;
+  margin-top: 0;
+  background-color: var(--color-ivory);
+}
+
+.visual {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  min-height: 85vh;
+}
+
+@media (min-width: 768px) {
+  .visual {
+    min-height: 90vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .visual {
+    min-height: 100vh;
+  }
+}
+
+.imageWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.imageEl {
+  object-fit: cover;
+  object-position: 65% center;
+}
+
+@media (min-width: 768px) {
+  .imageEl {
+    object-position: 60% center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imageEl {
+    object-position: center center;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: calc(var(--header-height) + 16px) 24px 36px;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    position: absolute;
+    top: 48%;
+    left: 4%;
+    transform: translateY(-50%);
+    width: 44%;
+    padding: 0;
+  }
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background-color: rgba(251, 243, 225, 0.85);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest-xl);
+  color: var(--color-ink);
+}
+
+.headline {
+  margin: 14px 0 0;
+}
+
+.lineMask {
+  display: block;
+  overflow: hidden;
+}
+
+.word {
+  display: inline-block;
+  will-change: transform;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-powder-dark);
+  font-size: clamp(42px, 13vw, 64px);
+  line-height: 1.0;
+  letter-spacing: 0.002em;
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .word {
+    font-size: clamp(38px, 6vw, 48px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .word {
+    font-size: clamp(48px, 5vw, 84px);
+  }
+}
+
+.wordLemon {
+  color: var(--color-powder-dark);
+}
+
+.scriptLine {
+  margin-top: 2px;
+}
+
+.scriptLine .word {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--color-royal);
+  font-size: clamp(56px, 15vw, 100px);
+  line-height: 0.9;
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .scriptLine .word {
+    font-size: clamp(76px, 11vw, 110px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .scriptLine .word {
+    font-size: clamp(90px, 8vw, 120px);
+  }
+}
+
+.lead {
+  margin: 24px 0 0;
+  max-width: 440px;
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(23, 20, 15, 0.72);
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .lead {
+    font-size: 15px;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 26px 0 0;
+}
+
+.actionItem {
+  display: inline-flex;
+  width: 100%;
+}
+
+.actionItem > a,
+.actionItem > button {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .actionItem {
+    width: auto;
+  }
+
+  .actionItem > a,
+  .actionItem > button {
+    width: auto;
+  }
+}
+
+.bottomRow {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 24px;
+}
+
+@media (min-width: 1024px) {
+  .bottomRow {
+    padding-left: calc(4% + 180px);
+    padding-right: 4%;
+  }
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.metaText {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: break-word;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background-color: rgba(251, 243, 225, 0.85);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest-xl);
+  color: var(--color-ink);
+}
+
+.scrollCue {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .scrollCue {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background-color: rgba(251, 243, 225, 0.85);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-widest-xl);
+    color: var(--color-ink);
+  }
+}
+
+.scrollCueDot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background-color: var(--color-powder);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scrollCue {
+    display: none;
+  }
+}

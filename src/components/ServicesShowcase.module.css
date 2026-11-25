@@ -1,0 +1,142 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-royal);
+  background-image: linear-gradient(rgba(194, 24, 91, 0.86), rgba(194, 24, 91, 0.92)), url("/images/backgrounds/services-bg.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+}
+
+.sidePhoto {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  display: none;
+}
+
+.sidePhoto::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent, var(--color-royal));
+}
+
+.sidePhoto[data-side="left"] {
+  left: 0;
+}
+
+.sidePhoto[data-side="right"] {
+  right: 0;
+}
+
+.sidePhoto[data-side="right"]::after {
+  background: linear-gradient(to left, transparent, var(--color-royal));
+}
+
+.photoImage {
+  object-fit: cover;
+  filter: grayscale(0.3);
+}
+
+@media (min-width: 1024px) {
+  .sidePhoto {
+    display: block;
+  }
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.headingRow {
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 60px;
+  line-height: 1;
+  color: var(--color-powder);
+}
+
+.heading {
+  margin-top: 20px;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--color-ivory);
+}
+
+@media (min-width: 768px) {
+  .eyebrow {
+    font-size: 76px;
+  }
+
+  .heading {
+    font-size: 44px;
+  }
+}
+
+.grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px 48px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.iconCircle {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background-color: var(--color-powder);
+  color: var(--color-ivory);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.item:hover .iconCircle {
+  background-color: var(--color-ivory);
+  color: var(--color-powder);
+  transform: translateY(-3px);
+}
+
+.item:hover .itemTitle {
+  color: var(--color-powder);
+}
+
+.itemTitle {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-ivory);
+  transition: color 0.2s ease;
+}
+
+.itemText {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 240, 0.6);
+}

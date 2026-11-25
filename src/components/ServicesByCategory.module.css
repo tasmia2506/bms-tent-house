@@ -1,0 +1,188 @@
+.section {
+  position: relative;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.headerRow {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .headerRow {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.eyebrow {
+  font-size: 32px;
+  line-height: 1;
+  color: var(--color-royal);
+}
+
+.heading {
+  margin-top: 8px;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--color-sapphire);
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 44px;
+  }
+}
+
+.lead {
+  margin-top: 8px;
+  max-width: 420px;
+  font-size: 14px;
+  color: rgba(194, 24, 91, 0.6);
+}
+
+.grid {
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+  display: grid;
+  gap: 20px 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+}
+
+.tileOverlayLink {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.tileImageWrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+}
+
+.tileImageInner {
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 16px 30px rgba(23, 20, 15, 0.1);
+}
+
+.tileYearBadge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background-color: rgba(23, 20, 15, 0.55);
+  backdrop-filter: blur(4px);
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--color-ivory);
+}
+
+.tileIconBadge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background-color: var(--color-ivory-light);
+  color: var(--color-royal);
+  box-shadow: 0 6px 14px rgba(23, 20, 15, 0.18);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tile:hover .tileIconBadge {
+  background-color: var(--color-powder);
+  color: var(--color-royal);
+}
+
+.tileImage {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tile:hover .tileImage {
+  transform: scale(1.06);
+}
+
+.tileName {
+  margin-top: 22px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.tileSubtitle {
+  margin-top: 4px;
+  max-width: 34ch;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(23, 20, 15, 0.6);
+}
+
+.tileTags {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tileTag {
+  display: inline-flex;
+  width: fit-content;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background-color: var(--color-ink);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ivory);
+}
+
+.tileExploreBtn {
+  position: relative;
+  z-index: 2;
+  margin-top: 16px;
+  width: fit-content;
+}

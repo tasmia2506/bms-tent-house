@@ -1,0 +1,63 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.columns {
+  margin-top: 40px;
+  column-count: 1;
+  column-gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .columns {
+    column-count: 3;
+  }
+}
+
+.figure {
+  position: relative;
+  break-inside: avoid;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.figure img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.figure:hover img {
+  transform: scale(1.03);
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  background-color: rgba(194, 24, 91, 0.75);
+  padding: 12px;
+  font-size: 12px;
+  color: var(--color-ivory);
+  transition: transform 0.3s ease;
+}
+
+.figure:hover .caption {
+  transform: translateY(0);
+}
+
+.representativeNote {
+  margin-left: 8px;
+  color: rgba(255, 255, 240, 0.6);
+}

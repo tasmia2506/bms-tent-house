@@ -1,0 +1,92 @@
+:root {
+  /* Brand palette — magenta (quiet base) + magical lemon green (one loud
+     accent) on a warm ivory page, with near-black ink for body typography.
+     Royal/sapphire are tints of the magenta; powder is the lemon accent and
+     its hover-state tint; olive is a muted decorative tone. */
+  --color-royal: #c2185b;
+  --color-royal-soft: #9e1249;
+  --color-powder: #d7e34a;
+  --color-powder-dark: #b9c932;
+  /* Muted mid-magenta — a softer secondary heading tone than full magenta. */
+  --color-sapphire: #a3225f;
+  --color-olive: #9a9a66;
+  --color-ink: #17140f;
+  --color-ivory: #fbf3e1;
+  --color-ivory-light: #fffbf3;
+  --color-ivory-dark: #eee2c3;
+
+  --font-display: var(--font-oswald), "Arial Narrow", sans-serif;
+  --font-script: var(--font-instrument-serif), "Georgia", serif;
+  --font-sans: var(--font-oswald), "Arial Narrow", sans-serif;
+
+  --tracking-widest-xl: 0.28em;
+  --header-height: 76px;
+  --announce-height: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  word-spacing: 0.06em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.script {
+  font-family: var(--font-script);
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: var(--color-powder-dark) !important;
+  font-size: 2.8em !important;
+  line-height: 0.85 !important;
+  margin-bottom: -10px !important;
+}
+
+.tracking-xl {
+  letter-spacing: var(--tracking-widest-xl);
+}
+
+::selection {
+  background-color: var(--color-royal);
+  color: var(--color-ivory);
+}

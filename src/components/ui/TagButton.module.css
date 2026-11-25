@@ -1,0 +1,22 @@
+.tag {
+  border-radius: 999px;
+  border: 1px solid rgba(194, 24, 91, 0.25);
+  padding: 6px 16px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(194, 24, 91, 0.7);
+  background: none;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.tag:hover {
+  border-color: var(--color-royal);
+  color: var(--color-royal);
+}
+
+.active {
+  border-color: var(--color-royal);
+  background-color: var(--color-royal);
+  color: var(--color-ivory);
+}
